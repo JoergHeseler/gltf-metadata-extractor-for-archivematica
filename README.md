@@ -65,11 +65,11 @@ To test this metadata exctractor, you can use the sample glTF files located [her
 
 You can view the error codes and detailed characterization results in the Archivmatica frontend after starting a transfer by expanding the `▸ Microservice: Characterize and extract metadata` section and clicking on the gear icon of `Microservice: Characterize and extract metadata`.
 
-Files with no errors end with `valid` in their name and should pass characterization with this script (i. e. return error code **0**). However, all other files contain errors and should fail characterization (i. e. either return error code **1** or **255**).
+Valid files should pass characterization with this script and return error code **0**. However, files containing errors should fail characterization and either return error code **1** or **255**.
 
 ### Example
 
-If you use this script to characterize the ASCII embedded glTF 2.0 model [`Duck.gltf`](https://github.com/KhronosGroup/glTF-Sample-Models/blob/main/2.0/Duck/glTF-Embedded/Duck.gltf), then the following XML content will be included in the AIP’s METS document within the file’s <objectCharacteristicsExtension> element:
+If you use this script to characterize the ASCII embedded glTF 2.0 model [`Duck.gltf`](https://github.com/KhronosGroup/glTF-Sample-Models/blob/main/2.0/Duck/glTF-Embedded/Duck.gltf), the error code **0** should be returned and the following XML content will be included in the AIP's METS document in the <objectCharacteristicsExtension> element of the file:
 
 ```
 <?xml version="1.0" ?>
