@@ -147,7 +147,7 @@ If you use this script to characterize the ASCII embedded glTF 2.0 model [`Duck.
 2. Is it necessary to output **technical metadata like file size, checksum, creation date etc.**?
 3. What **minimal 3D data** should be captured for all 3D formats?
 4. Should a **fixed vocabulary be used** for 3D? If so, should a new schema for metadata be created to extract technical 3D metadata? As far as I know, there are currently only IFCm, E57m and BUILDm.
-5. Is the **GLTF validator** suitable for metadata extraction?
+5. Is the **official glTF validator suitable** for metadata extraction or should instead separate source code for each sub-format be written? The advantage of the official version is that it evaluates all versions regardless of whether ASCII or binary and returns common technical metadata. A custom development would be more complex and focus on a specific subversion.
 
 ## Dependencies
 
