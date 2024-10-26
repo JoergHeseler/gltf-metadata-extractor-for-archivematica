@@ -141,6 +141,14 @@ If you use this script to characterize the ASCII embedded glTF 2.0 model [`Duck.
 </GLTFMetadataExtractor>
 ```
 
+## Open questions
+
+1. Which **output formats** shoud be used? Pure XML, PREMIS or something else?
+2. Is it necessary to output **technical metadata such as filesize, checksum, creation date etc.**?
+3. What **3D data** should be provided at least for all formats?
+4. Should be **fixed vocabulary be used for 3D**?
+5. Is the **GLTF validator** suitable for metadata extraction?
+
 ## Dependencies
 
 [Archivematica 1.13.2](https://github.com/artefactual/archivematica/releases/tag/v1.13.2) and [glTF-Validator 2.0.0-dev.3.8](https://github.com/KhronosGroup/glTF-Validator/releases/tag/2.0.0-dev.3.8) were used to analyze, design, develop and test this script.
