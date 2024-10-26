@@ -141,7 +141,7 @@ If you use this script to characterize the ASCII embedded glTF 2.0 model [`Duck.
 </GLTFMetadataExtractor>
 ```
 
-## Open questions
+## Discussion / Open Questions
 
 1. Which **output formats** shoud be used here? Pure XML only, PREMIS or something else?
 2. Is it necessary to output **technical metadata such as filesize, checksum, creation date etc.**?
