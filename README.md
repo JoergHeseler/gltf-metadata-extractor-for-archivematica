@@ -143,10 +143,10 @@ If you use this script to characterize the ASCII embedded glTF 2.0 model [`Duck.
 
 ## Discussion / Open Questions
 
-1. Which **output formats** shoud be used here? Pure XML only, PREMIS or something else?
-2. Is it necessary to output **technical metadata such as filesize, checksum, creation date etc.**?
-3. What **3D data** should be provided at least for all formats?
-4. Should be **fixed vocabulary be used for 3D**? If yes, should a new schema metadata for 3D technical metadata extraction be created? For now there only exists IFCm, E57m and BUILDm.
+1. What **output formats** should be used here? Just pure XML, PREMIS or something else?
+2. Is it necessary to output **technical metadata like file size, checksum, creation date etc.**?
+3. What **minimal 3D data** should be captured for all 3D formats?
+4. Should a **fixed vocabulary be used** for 3D? If so, should a new schema for metadata be created to extract technical 3D metadata? As far as I know, there are currently only IFCm, E57m and BUILDm.
 5. Is the **GLTF validator** suitable for metadata extraction?
 
 ## Dependencies
