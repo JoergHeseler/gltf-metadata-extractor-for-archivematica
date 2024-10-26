@@ -67,6 +67,8 @@ You can view the error codes and detailed characterization results in the Archiv
 
 Files with no errors end with `valid` in their name and should pass characterization with this script (i. e. return error code **0**). However, all other files contain errors and should fail characterization (i. e. either return error code **1** or **255**).
 
+### Example
+
 If you use this script to characterize the ASCII embedded glTF 2.0 model [`Duck.gltf`](https://github.com/KhronosGroup/glTF-Sample-Models/blob/main/2.0/Duck/glTF-Embedded/Duck.gltf), then the following XML content will be included in the AIP’s METS document within the file’s <objectCharacteristicsExtension> element:
 
 ```
