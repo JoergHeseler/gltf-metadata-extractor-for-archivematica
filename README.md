@@ -65,7 +65,79 @@ To test this metadata exctractor, you can use the sample glTF files located [her
 
 You can view the error codes and detailed characterization results in the Archivmatica frontend after starting a transfer by expanding the `▸ Microservice: Characterize and extract metadata` section and clicking on the gear icon of `Microservice: Characterize and extract metadata`.
 
-Files with no errors end with `valid` in their name and should pass characterization with this script (i. e. return error code **0**). However, all other files contain errors and should fail characterization (i. e. return error code **1** or **255**).
+Files with no errors end with `valid` in their name and should pass characterization with this script (i. e. return error code **0**). However, all other files contain errors and should fail characterization (i. e. either return error code **1** or **255**).
+
+If you use this script to characterize the ASCII embedded glTF 2.0 model [`Duck.gltf`](https://github.com/KhronosGroup/glTF-Sample-Models/blob/main/2.0/Duck/glTF-Embedded/Duck.gltf), then the following XML content will be included in the AIP’s METS document within the file’s <objectCharacteristicsExtension> element:
+
+```
+<?xml version="1.0" ?>
+<GLTFMetadataExtractor>
+    <formatName>GLTF</formatName>
+    <formatVersion>2.0</formatVersion>
+    <size>162796</size>
+    <SHA256Checksum>b69c34f30ec2803a37c6546c890a202f4db618745a3fefa3e5ac360bff211931</SHA256Checksum>
+    <creationDate>2024-10-26T14:34:56.998537</creationDate>
+    <modificationDate>2023-05-31T10:26:56</modificationDate>
+    <generator>COLLADA2GLTF</generator>
+    <hasDefaultScene>True</hasDefaultScene>
+    <totalVertexCount>2399</totalVertexCount>
+    <totalTriangleCount>4212</totalTriangleCount>
+    <materialCount>1</materialCount>
+    <hasTextures>True</hasTextures>
+    <animationCount>0</animationCount>
+    <hasSkins>False</hasSkins>
+    <rawGLTFValidatorOutput>{
+    &quot;uri&quot;: &quot;var/archivematica/sharedDirectory/watchedDirectories/workFlowDecisions/extractPackagesChoice/g14_3-5d2becc4-fd78-42a4-accb-a6a8382efd79/objects/Duck.gltf&quot;,
+    &quot;mimeType&quot;: &quot;model/gltf+json&quot;,
+    &quot;validatorVersion&quot;: &quot;2.0.0-dev.3.8&quot;,
+    &quot;issues&quot;: {
+        &quot;numErrors&quot;: 0,
+        &quot;numWarnings&quot;: 0,
+        &quot;numInfos&quot;: 0,
+        &quot;numHints&quot;: 0,
+        &quot;messages&quot;: [],
+        &quot;truncated&quot;: false
+    },
+    &quot;info&quot;: {
+        &quot;version&quot;: &quot;2.0&quot;,
+        &quot;generator&quot;: &quot;COLLADA2GLTF&quot;,
+        &quot;resources&quot;: [
+            {
+                &quot;pointer&quot;: &quot;/buffers/0&quot;,
+                &quot;mimeType&quot;: &quot;application/gltf-buffer&quot;,
+                &quot;storage&quot;: &quot;data-uri&quot;,
+                &quot;byteLength&quot;: 102040
+            },
+            {
+                &quot;pointer&quot;: &quot;/images/0&quot;,
+                &quot;mimeType&quot;: &quot;image/png&quot;,
+                &quot;storage&quot;: &quot;data-uri&quot;,
+                &quot;image&quot;: {
+                    &quot;width&quot;: 512,
+                    &quot;height&quot;: 512,
+                    &quot;format&quot;: &quot;rgb&quot;,
+                    &quot;primaries&quot;: &quot;srgb&quot;,
+                    &quot;transfer&quot;: &quot;srgb&quot;,
+                    &quot;bits&quot;: 8
+                }
+            }
+        ],
+        &quot;animationCount&quot;: 0,
+        &quot;materialCount&quot;: 1,
+        &quot;hasMorphTargets&quot;: false,
+        &quot;hasSkins&quot;: false,
+        &quot;hasTextures&quot;: true,
+        &quot;hasDefaultScene&quot;: true,
+        &quot;drawCallCount&quot;: 1,
+        &quot;totalVertexCount&quot;: 2399,
+        &quot;totalTriangleCount&quot;: 4212,
+        &quot;maxUVs&quot;: 1,
+        &quot;maxInfluences&quot;: 0,
+        &quot;maxAttributes&quot;: 3
+    }
+}</rawGLTFValidatorOutput>
+</GLTFMetadataExtractor>
+```
 
 ## Dependencies
 
