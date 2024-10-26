@@ -27,7 +27,7 @@ class GLTFValidatorException(Exception):
     pass
 
 def parse_gltf_validator_data(target):
-    # 'gltf_validator'
+    # Run the official gltf_validator
     args = ['gltf_validator', '-amo', target]
 
     try:
@@ -40,13 +40,13 @@ def parse_gltf_validator_data(target):
 def extract_gltf_metadata(file_path):
     gltf_json_output = parse_gltf_validator_data(file_path)
     
-    # Datei-Metadaten
+    # File metadata
     file_size = os.path.getsize(file_path)
     creation_date = datetime.utcfromtimestamp(os.path.getctime(file_path)).isoformat()
     modification_date = datetime.utcfromtimestamp(os.path.getmtime(file_path)).isoformat()
     checksum = calculate_checksum(file_path)
     
-    # XML-Baum erstellen
+    # Create XML tree
     root = ET.Element('GLTFMetadataExtractor')
     ET.SubElement(root, 'formatName').text = 'GLTF'
     ET.SubElement(root, 'formatVersion').text = gltf_json_output['info']['version']
@@ -64,7 +64,7 @@ def extract_gltf_metadata(file_path):
     ET.SubElement(root, 'hasSkins').text = str(gltf_json_output['info']['hasSkins'])
     ET.SubElement(root, 'rawGLTFValidatorOutput').text = json.dumps(gltf_json_output, indent=4)
     
-    # XML-Ausgabe formatieren und in der Konsole ausgeben
+    # Format XML output and print it in the console
     xml_output = ET.tostring(root, encoding='utf-8', method='xml').decode('utf-8')
     reparsed = minidom.parseString(xml_output)
     print(reparsed.toprettyxml(indent="    "))
@@ -73,17 +73,16 @@ def get_target_file_name_from_arguments():
     target = None
     for arg in sys.argv:
         if arg.startswith("--file-full-name="):
-            # Extrahiere den Teil nach dem Gleichheitszeichen
+            # Extract the part after the equals sign
             target = arg.split("=", 1)[1]
             break
     return target
 
 
-# Beispielaufruf des Skripts
 if __name__ == '__main__':
-# Beispielaufruf der Funktion
+# Main
     target = get_target_file_name_from_arguments()
     if not target:
-        print("Kein Argument mit --file-full-name= gefunden.", file=sys.stderr)
+        print("No argument with --file-full-name= found.", file=sys.stderr)
     else:
         sys.exit(extract_gltf_metadata(target))
