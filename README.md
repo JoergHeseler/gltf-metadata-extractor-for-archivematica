@@ -71,7 +71,7 @@ Valid files should pass characterization with this script and return error code 
 
 If you use this script to characterize the ASCII embedded glTF 2.0 model [`Duck.gltf`](https://github.com/KhronosGroup/glTF-Sample-Models/blob/main/2.0/Duck/glTF-Embedded/Duck.gltf), the error code **0** should be returned and the following XML content will be included in the AIP's METS document in the <objectCharacteristicsExtension> element of the file:
 
-```
+```xml
 <?xml version="1.0" ?>
 <GLTFMetadataExtractor>
     <formatName>GLTF</formatName>
