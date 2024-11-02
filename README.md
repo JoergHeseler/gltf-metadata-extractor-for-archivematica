@@ -148,6 +148,7 @@ If you use this script to characterize the ASCII embedded glTF 2.0 model [`Duck.
 3. What **minimal 3D data** should be captured for all 3D formats?
 4. Should a **fixed vocabulary be used** for 3D? If so, should a new schema for metadata be created to extract technical 3D metadata? As far as I know, there are currently only IFCm, E57m and BUILDm.
 5. Is the **official glTF validator suitable** for metadata extraction or should separate source code be written for each subformat instead? The advantage of the official version is that it evaluates all versions, regardless of whether they are ASCII or binary, and returns common technical metadata. A custom development would be more complex and would focus on a specific subversion. If so, should the complete JSON output be used for metadata extraction or only selected properties be used?
+6. Does it make more sense to program a **standalone app**, e.g. with Python, which is then called in this script? This way, the tool could be used for more than just Archivematica.
 
 ## Dependencies
 
