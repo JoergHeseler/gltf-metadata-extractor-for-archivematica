@@ -73,12 +73,12 @@ If you use this script to characterize the ASCII embedded glTF 2.0 model [`Duck.
 
 ```xml
 <?xml version="1.0" ?>
-<GLTFMetadataExtractor>
+<GLTFMetadataExtractor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://nfdi4culture.de/gltf-metadata-extractor1 https://raw.githubusercontent.com/JoergHeseler/gltf-metadata-extractor-for-archivematica/refs/heads/main/src/gltf-metadata-extractor.xsd">
     <formatName>GLTF</formatName>
     <formatVersion>2.0</formatVersion>
     <size>162796</size>
     <SHA256Checksum>b69c34f30ec2803a37c6546c890a202f4db618745a3fefa3e5ac360bff211931</SHA256Checksum>
-    <creationDate>2024-10-26T14:34:56.998537</creationDate>
+    <creationDate>2024-11-05T10:05:49.372763</creationDate>
     <modificationDate>2023-05-31T10:26:56</modificationDate>
     <generator>COLLADA2GLTF</generator>
     <hasDefaultScene>True</hasDefaultScene>
@@ -89,7 +89,7 @@ If you use this script to characterize the ASCII embedded glTF 2.0 model [`Duck.
     <animationCount>0</animationCount>
     <hasSkins>False</hasSkins>
     <rawGLTFValidatorOutput>{
-    &quot;uri&quot;: &quot;var/archivematica/sharedDirectory/watchedDirectories/workFlowDecisions/extractPackagesChoice/g14_3-5d2becc4-fd78-42a4-accb-a6a8382efd79/objects/Duck.gltf&quot;,
+    &quot;uri&quot;: &quot;var/archivematica/sharedDirectory/watchedDirectories/workFlowDecisions/extractPackagesChoice/gltf20-43e04523-03fc-49f1-ae71-6a5e480138b3/objects/Duck.gltf&quot;,
     &quot;mimeType&quot;: &quot;model/gltf+json&quot;,
     &quot;validatorVersion&quot;: &quot;2.0.0-dev.3.8&quot;,
     &quot;issues&quot;: {
