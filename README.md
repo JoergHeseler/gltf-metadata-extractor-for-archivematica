@@ -78,7 +78,7 @@ If you use this script to characterize the ASCII embedded glTF 2.0 model [`Duck.
     <formatVersion>2.0</formatVersion>
     <size>162796</size>
     <SHA256Checksum>b69c34f30ec2803a37c6546c890a202f4db618745a3fefa3e5ac360bff211931</SHA256Checksum>
-    <creationDate>2024-11-05T10:05:49.372763</creationDate>
+    <creationDate>2024-11-08T11:29:10.252562</creationDate>
     <modificationDate>2023-05-31T10:26:56</modificationDate>
     <generator>COLLADA2GLTF</generator>
     <hasDefaultScene>True</hasDefaultScene>
@@ -88,56 +88,57 @@ If you use this script to characterize the ASCII embedded glTF 2.0 model [`Duck.
     <hasTextures>True</hasTextures>
     <animationCount>0</animationCount>
     <hasSkins>False</hasSkins>
-    <rawGLTFValidatorOutput>{
-    &quot;uri&quot;: &quot;var/archivematica/sharedDirectory/watchedDirectories/workFlowDecisions/extractPackagesChoice/gltf20-43e04523-03fc-49f1-ae71-6a5e480138b3/objects/Duck.gltf&quot;,
-    &quot;mimeType&quot;: &quot;model/gltf+json&quot;,
-    &quot;validatorVersion&quot;: &quot;2.0.0-dev.3.8&quot;,
-    &quot;issues&quot;: {
-        &quot;numErrors&quot;: 0,
-        &quot;numWarnings&quot;: 0,
-        &quot;numInfos&quot;: 0,
-        &quot;numHints&quot;: 0,
-        &quot;messages&quot;: [],
-        &quot;truncated&quot;: false
+    <rawGLTFValidatorOutput>
+<![CDATA[{
+    "uri": "var/archivematica/sharedDirectory/watchedDirectories/workFlowDecisions/extractPackagesChoice/gltf20cdata2-6502089b-d256-4c2f-8d90-cec6adf65950/objects/Duck.gltf",
+    "mimeType": "model/gltf+json",
+    "validatorVersion": "2.0.0-dev.3.8",
+    "issues": {
+        "numErrors": 0,
+        "numWarnings": 0,
+        "numInfos": 0,
+        "numHints": 0,
+        "messages": [],
+        "truncated": false
     },
-    &quot;info&quot;: {
-        &quot;version&quot;: &quot;2.0&quot;,
-        &quot;generator&quot;: &quot;COLLADA2GLTF&quot;,
-        &quot;resources&quot;: [
+    "info": {
+        "version": "2.0",
+        "generator": "COLLADA2GLTF",
+        "resources": [
             {
-                &quot;pointer&quot;: &quot;/buffers/0&quot;,
-                &quot;mimeType&quot;: &quot;application/gltf-buffer&quot;,
-                &quot;storage&quot;: &quot;data-uri&quot;,
-                &quot;byteLength&quot;: 102040
+                "pointer": "/buffers/0",
+                "mimeType": "application/gltf-buffer",
+                "storage": "data-uri",
+                "byteLength": 102040
             },
             {
-                &quot;pointer&quot;: &quot;/images/0&quot;,
-                &quot;mimeType&quot;: &quot;image/png&quot;,
-                &quot;storage&quot;: &quot;data-uri&quot;,
-                &quot;image&quot;: {
-                    &quot;width&quot;: 512,
-                    &quot;height&quot;: 512,
-                    &quot;format&quot;: &quot;rgb&quot;,
-                    &quot;primaries&quot;: &quot;srgb&quot;,
-                    &quot;transfer&quot;: &quot;srgb&quot;,
-                    &quot;bits&quot;: 8
+                "pointer": "/images/0",
+                "mimeType": "image/png",
+                "storage": "data-uri",
+                "image": {
+                    "width": 512,
+                    "height": 512,
+                    "format": "rgb",
+                    "primaries": "srgb",
+                    "transfer": "srgb",
+                    "bits": 8
                 }
             }
         ],
-        &quot;animationCount&quot;: 0,
-        &quot;materialCount&quot;: 1,
-        &quot;hasMorphTargets&quot;: false,
-        &quot;hasSkins&quot;: false,
-        &quot;hasTextures&quot;: true,
-        &quot;hasDefaultScene&quot;: true,
-        &quot;drawCallCount&quot;: 1,
-        &quot;totalVertexCount&quot;: 2399,
-        &quot;totalTriangleCount&quot;: 4212,
-        &quot;maxUVs&quot;: 1,
-        &quot;maxInfluences&quot;: 0,
-        &quot;maxAttributes&quot;: 3
+        "animationCount": 0,
+        "materialCount": 1,
+        "hasMorphTargets": false,
+        "hasSkins": false,
+        "hasTextures": true,
+        "hasDefaultScene": true,
+        "drawCallCount": 1,
+        "totalVertexCount": 2399,
+        "totalTriangleCount": 4212,
+        "maxUVs": 1,
+        "maxInfluences": 0,
+        "maxAttributes": 3
     }
-}</rawGLTFValidatorOutput>
+}]]>    </rawGLTFValidatorOutput>
 </GLTFMetadataExtractor>
 ```
 
