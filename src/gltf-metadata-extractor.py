@@ -69,12 +69,21 @@ def extract_gltf_metadata(file_path):
     ET.SubElement(root, 'hasTextures').text = str(gltf_json_output['info']['hasTextures'])
     ET.SubElement(root, 'animationCount').text = str(gltf_json_output['info']['animationCount'])
     ET.SubElement(root, 'hasSkins').text = str(gltf_json_output['info']['hasSkins'])
-    ET.SubElement(root, 'rawGLTFValidatorOutput').text = json.dumps(gltf_json_output, indent=4)
     
-    # Format XML output and print it in the console
-    xml_output = ET.tostring(root, encoding='utf-8', method='xml').decode('utf-8')
-    reparsed = minidom.parseString(xml_output)
-    print(reparsed.toprettyxml(indent="    "))
+    # Convert ElementTree to minidom document for CDATA support
+    xml_str = ET.tostring(root, encoding='utf-8')
+    dom = minidom.parseString(xml_str)
+    
+    # Add CDATA section for rawGLTFValidatorOutput
+    raw_output = dom.createElement('rawGLTFValidatorOutput')
+    cdata_section = dom.createCDATASection(json.dumps(gltf_json_output, indent=4))
+    raw_output.appendChild(cdata_section)
+    dom.documentElement.appendChild(raw_output)
+
+    # Print formatted XML with CDATA
+    print(dom.toprettyxml(indent="    "))
+
+
 
 def get_target_file_name_from_arguments():
     target = None
