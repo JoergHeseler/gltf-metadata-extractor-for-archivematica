@@ -26,6 +26,7 @@ To install this script, follow these steps:
   - **Description**: Enter `Characterize using gltf_validator`.
   - **Command**: Paste the entire content of the [**gltf-metadata-extractor.py**](./src/gltf-metadata-extractor.py) file.
   - **Script type**: Select **Python script**.
+  - **The related output format**: Select **Text (Markup): XML: XML (fmt/101)**.
   - **Command usage**: Select **Characterization**.
   - Leave all other input fields and combo boxes untouched.
 - Click **Save**.
