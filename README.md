@@ -1,4 +1,4 @@
-# ⚠️ Warning: Experimental Project ⚠️<br><br>glTF Metadata Extractor for Archivematica
+# glTF Metadata Extractor for Archivematica
 
 This repository provides a script to extract metadata from Graphics Language Transmission Format (glTF) files in [Archivematica](https://www.archivematica.org/) using the official [glTF-Validator](https://github.com/KhronosGroup/glTF-Validator/releases) tool.
 
