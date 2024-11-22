@@ -19,69 +19,7 @@
                 <xs:element name="hasTextures" type="xs:boolean" />
                 <xs:element name="animationCount" type="xs:integer" />
                 <xs:element name="hasSkins" type="xs:boolean" />
-                <xs:element name="rawGLTFValidatorOutput">
-                    <xs:complexType>
-                        <xs:sequence>
-                            <xs:element name="uri" type="xs:string" />
-                            <xs:element name="mimeType" type="xs:string" />
-                            <xs:element name="validatorVersion" type="xs:string" />
-                            <xs:element name="issues">
-                                <xs:complexType>
-                                    <xs:sequence>
-                                        <xs:element name="numErrors" type="xs:integer" />
-                                        <xs:element name="numWarnings" type="xs:integer" />
-                                        <xs:element name="numInfos" type="xs:integer" />
-                                        <xs:element name="numHints" type="xs:integer" />
-                                        <xs:element name="messages" type="xs:string" minOccurs="0" maxOccurs="unbounded" />
-                                        <xs:element name="truncated" type="xs:boolean" />
-                                    </xs:sequence>
-                                </xs:complexType>
-                            </xs:element>
-                            <xs:element name="info">
-                                <xs:complexType>
-                                    <xs:sequence>
-                                        <xs:element name="version" type="xs:string" />
-                                        <xs:element name="generator" type="xs:string" />
-                                        <xs:element name="resources" minOccurs="0" maxOccurs="unbounded">
-                                            <xs:complexType>
-                                                <xs:sequence>
-                                                    <xs:element name="pointer" type="xs:string" />
-                                                    <xs:element name="mimeType" type="xs:string" />
-                                                    <xs:element name="storage" type="xs:string" />
-                                                    <xs:element name="byteLength" type="xs:integer" />
-                                                    <xs:element name="image" minOccurs="0">
-                                                        <xs:complexType>
-                                                            <xs:sequence>
-                                                                <xs:element name="width" type="xs:integer" />
-                                                                <xs:element name="height" type="xs:integer" />
-                                                                <xs:element name="format" type="xs:string" />
-                                                                <xs:element name="primaries" type="xs:string" />
-                                                                <xs:element name="transfer" type="xs:string" />
-                                                                <xs:element name="bits" type="xs:integer" />
-                                                            </xs:sequence>
-                                                        </xs:complexType>
-                                                    </xs:element>
-                                                </xs:sequence>
-                                            </xs:complexType>
-                                        </xs:element>
-                                        <xs:element name="animationCount" type="xs:integer" />
-                                        <xs:element name="materialCount" type="xs:integer" />
-                                        <xs:element name="hasMorphTargets" type="xs:boolean" />
-                                        <xs:element name="hasSkins" type="xs:boolean" />
-                                        <xs:element name="hasTextures" type="xs:boolean" />
-                                        <xs:element name="hasDefaultScene" type="xs:boolean" />
-                                        <xs:element name="drawCallCount" type="xs:integer" />
-                                        <xs:element name="totalVertexCount" type="xs:integer" />
-                                        <xs:element name="totalTriangleCount" type="xs:integer" />
-                                        <xs:element name="maxUVs" type="xs:integer" />
-                                        <xs:element name="maxInfluences" type="xs:integer" />
-                                        <xs:element name="maxAttributes" type="xs:integer" />
-                                    </xs:sequence>
-                                </xs:complexType>
-                            </xs:element>
-                        </xs:sequence>
-                    </xs:complexType>
-                </xs:element>
+                <xs:element name="rawGLTFValidatorOutput" type="xs:string" />
             </xs:sequence>
         </xs:complexType>
     </xs:element>
