@@ -1,7 +1,7 @@
 # Title: gltf-metadata-extractor
 # Version: 1.0.0
 # Publisher: NFDI4Culture
-# Publication date: 2024, October 25th
+# Publication date: November 22, 2024
 # License: CC BY 4.0
 
 import json
