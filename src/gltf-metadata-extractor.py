@@ -58,6 +58,7 @@ def extract_gltf_metadata(file_path):
     # Create XML tree with namespace and schema location
     ET.register_namespace('', "http://nfdi4culture.de/gltf-metadata-extractor1") # Register default namespace
     root = ET.Element('GLTFMetadataExtractor', {
+        'xmlns': "http://nfdi4culture.de/gltf-metadata-extractor1",
         'xmlns:xsi': "http://www.w3.org/2001/XMLSchema-instance",
         'xsi:schemaLocation': "http://nfdi4culture.de/gltf-metadata-extractor1 https://raw.githubusercontent.com/JoergHeseler/gltf-metadata-extractor-for-archivematica/refs/heads/main/src/gltf-metadata-extractor.xsd"
     })
