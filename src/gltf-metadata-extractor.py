@@ -37,7 +37,8 @@ class GLTFValidatorException(Exception):
 
 def parse_gltf_validator_data(target):
     # Run the official gltf_validator
-    args = ['gltf_validator', '-amo', target]
+    validator_path = '/usr/share/gltf_validator'
+    args = [validator_path, '-amo', target]
 
     try:
         output = subprocess.check_output(args).decode("utf8")
