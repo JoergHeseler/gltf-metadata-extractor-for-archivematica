@@ -6,8 +6,6 @@ This repository provides a script to extract metadata from Graphics Language Tra
 
 To install this script, follow these steps:
 
-If you have already installed the official glTF validator tool in Archivematica, you can skip steps 1 and 2.
-
 ### 1. Download the official glTF-Validator tool
 
 - Download the latest release of the [glTF-Validator](https://github.com/KhronosGroup/glTF-Validator/releases) and install it in the `/usr/share/` folder.
@@ -32,7 +30,7 @@ If you have already installed the official glTF validator tool in Archivematica,
   - Leave all other input fields and combo boxes untouched.
 - Click **Save**.
 
-### 4. Create a new validation rule for ASCII based glTF 1.0
+### 4. Create a new characterization rule for ASCII based glTF 1.0
 
 - In the Archivematica frontend, navigate to **Preservation planning** > **Characterization** > **Rules** > **Create new rule** or go directly to [this link](http://10.10.10.20/fpr/fprule/create/).
 - Fill in the following fields:
@@ -41,7 +39,7 @@ If you have already installed the official glTF validator tool in Archivematica,
   - **Command**: Select **Characterize using gltf_validator**.
 - Click **Save**.
 
-### 5. Create a new validation rule for ASCII based glTF 2.0
+### 5. Create a new characterization rule for ASCII based glTF 2.0
 
 - In the Archivematica frontend, navigate to **Preservation planning** > **Characterization** > **Rules** > **Create new rule** or go directly to [this link](http://10.10.10.20/fpr/fprule/create/).
 - Fill in the following fields:
@@ -50,7 +48,7 @@ If you have already installed the official glTF validator tool in Archivematica,
   - **Command**: Select **Characterize using gltf_validator**.
 - Click **Save**.
 
-### 6. Create a new validation rule for binary glTF files
+### 6. Create a new characterization rule for binary glTF files
 
 - In the Archivematica frontend, navigate to **Preservation planning** > **Characterization** > **Rules** > **Create new rule** or go directly to [this link](http://10.10.10.20/fpr/fprule/create/).
 - Fill in the following fields:
