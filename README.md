@@ -81,13 +81,13 @@ If you use this script to characterize the ASCII embedded glTF 2.0 model [`Duck.
     <creationDate>2024-11-08T11:29:10.252562</creationDate>
     <modificationDate>2023-05-31T10:26:56</modificationDate>
     <generator>COLLADA2GLTF</generator>
-    <hasDefaultScene>True</hasDefaultScene>
+    <hasDefaultScene>true</hasDefaultScene>
     <totalVertexCount>2399</totalVertexCount>
     <totalTriangleCount>4212</totalTriangleCount>
     <materialCount>1</materialCount>
-    <hasTextures>True</hasTextures>
+    <hasTextures>true</hasTextures>
     <animationCount>0</animationCount>
-    <hasSkins>False</hasSkins>
+    <hasSkins>false</hasSkins>
     <rawGLTFValidatorOutput>
 <![CDATA[{
     "uri": "var/archivematica/sharedDirectory/watchedDirectories/workFlowDecisions/extractPackagesChoice/gltf20cdata2-6502089b-d256-4c2f-8d90-cec6adf65950/objects/Duck.gltf",
