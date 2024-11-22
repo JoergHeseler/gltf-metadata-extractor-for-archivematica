@@ -13,6 +13,15 @@ import sys
 import xml.etree.ElementTree as ET
 from xml.dom import minidom
 
+def get_target_file_name_from_arguments():
+    target = None
+    for arg in sys.argv:
+        if arg.startswith("--file-full-name="):
+            # Extract the part after the equals sign
+            target = arg.split("=", 1)[1]
+            break
+    return target
+
 def calculate_checksum(file_path, algorithm='sha256'):
     hash_func = hashlib.new(algorithm)
     with open(file_path, 'rb') as f:
@@ -62,13 +71,13 @@ def extract_gltf_metadata(file_path):
     ET.SubElement(root, 'creationDate').text = creation_date
     ET.SubElement(root, 'modificationDate').text = modification_date
     ET.SubElement(root, 'generator').text = gltf_json_output['info']['generator']
-    ET.SubElement(root, 'hasDefaultScene').text = str(gltf_json_output['info']['hasDefaultScene'])
+    ET.SubElement(root, 'hasDefaultScene').text = str(gltf_json_output['info']['hasDefaultScene']).lower()
     ET.SubElement(root, 'totalVertexCount').text = str(gltf_json_output['info']['totalVertexCount'])
     ET.SubElement(root, 'totalTriangleCount').text = str(gltf_json_output['info']['totalTriangleCount'])
     ET.SubElement(root, 'materialCount').text = str(gltf_json_output['info']['materialCount'])
-    ET.SubElement(root, 'hasTextures').text = str(gltf_json_output['info']['hasTextures'])
+    ET.SubElement(root, 'hasTextures').text = str(gltf_json_output['info']['hasTextures']).lower()
     ET.SubElement(root, 'animationCount').text = str(gltf_json_output['info']['animationCount'])
-    ET.SubElement(root, 'hasSkins').text = str(gltf_json_output['info']['hasSkins'])
+    ET.SubElement(root, 'hasSkins').text = str(gltf_json_output['info']['hasSkins']).lower()
     
     # Convert ElementTree to minidom document for CDATA support
     xml_str = ET.tostring(root, encoding='utf-8')
@@ -82,17 +91,6 @@ def extract_gltf_metadata(file_path):
 
     # Print formatted XML with CDATA
     print(dom.toprettyxml(indent="    "))
-
-
-
-def get_target_file_name_from_arguments():
-    target = None
-    for arg in sys.argv:
-        if arg.startswith("--file-full-name="):
-            # Extract the part after the equals sign
-            target = arg.split("=", 1)[1]
-            break
-    return target
 
 
 if __name__ == '__main__':
