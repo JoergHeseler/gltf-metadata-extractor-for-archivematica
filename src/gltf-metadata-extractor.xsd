@@ -1,27 +1,95 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
-    
-    <!-- Root Element Definition -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns="http://nfdi4culture.de/gltf-metadata-extractor1"
+           targetNamespace="http://nfdi4culture.de/gltf-metadata-extractor1"
+           elementFormDefault="qualified"
+           version="1.0">
+
+    <!-- Root Element: GLTFMetadataExtractor -->
     <xs:element name="GLTFMetadataExtractor">
+        <xs:annotation>
+            <xs:documentation>Root element containing metadata about a GLTF file based on the official glTF-Validator by Khronos Group.</xs:documentation>
+        </xs:annotation>
         <xs:complexType>
             <xs:sequence>
-                <xs:element name="formatName" type="xs:string" />
-                <xs:element name="formatVersion" type="xs:string" />
-                <xs:element name="size" type="xs:integer" />
-                <xs:element name="SHA256Checksum" type="xs:string" />
-                <xs:element name="creationDate" type="xs:dateTime" />
-                <xs:element name="modificationDate" type="xs:dateTime" />
-                <xs:element name="generator" type="xs:string" />
-                <xs:element name="hasDefaultScene" type="xs:boolean" />
-                <xs:element name="totalVertexCount" type="xs:integer" />
-                <xs:element name="totalTriangleCount" type="xs:integer" />
-                <xs:element name="materialCount" type="xs:integer" />
-                <xs:element name="hasTextures" type="xs:boolean" />
-                <xs:element name="animationCount" type="xs:integer" />
-                <xs:element name="hasSkins" type="xs:boolean" />
-                <xs:element name="rawGLTFValidatorOutput" type="xs:string" />
+                <xs:element name="formatName" type="xs:string">
+                    <xs:annotation>
+                        <xs:documentation>The name of the file format, e.g., GLTF.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="formatVersion" type="xs:string">
+                    <xs:annotation>
+                        <xs:documentation>The version of the GLTF file format.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="size" type="xs:integer">
+                    <xs:annotation>
+                        <xs:documentation>Size of the GLTF file in bytes.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="SHA256Checksum" type="xs:string">
+                    <xs:annotation>
+                        <xs:documentation>SHA-256 checksum of the file for integrity verification.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="creationDate" type="xs:dateTime">
+                    <xs:annotation>
+                        <xs:documentation>Timestamp of when the GLTF file was created.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="modificationDate" type="xs:dateTime">
+                    <xs:annotation>
+                        <xs:documentation>Timestamp of the last modification of the GLTF file.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="generator" type="xs:string">
+                    <xs:annotation>
+                        <xs:documentation>Tool or software used to generate the GLTF file.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="hasDefaultScene" type="xs:boolean">
+                    <xs:annotation>
+                        <xs:documentation>Indicates whether the GLTF file has a default scene.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="totalVertexCount" type="xs:integer">
+                    <xs:annotation>
+                        <xs:documentation>Total number of vertices in the 3D model.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="totalTriangleCount" type="xs:integer">
+                    <xs:annotation>
+                        <xs:documentation>Total number of triangles in the 3D model.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="materialCount" type="xs:integer">
+                    <xs:annotation>
+                        <xs:documentation>Number of materials used in the 3D model.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="hasTextures" type="xs:boolean">
+                    <xs:annotation>
+                        <xs:documentation>Indicates whether the model has textures.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="animationCount" type="xs:integer">
+                    <xs:annotation>
+                        <xs:documentation>Number of animations in the model.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="hasSkins" type="xs:boolean">
+                    <xs:annotation>
+                        <xs:documentation>Indicates whether the model includes skins.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="rawGLTFValidatorOutput" type="xs:string">
+                    <xs:annotation>
+                        <xs:documentation>
+                            Raw JSON output from the GLTF validator, wrapped in CDATA.
+                        </xs:documentation>
+                    </xs:annotation>
+                </xs:element>
             </xs:sequence>
         </xs:complexType>
     </xs:element>
-
 </xs:schema>
