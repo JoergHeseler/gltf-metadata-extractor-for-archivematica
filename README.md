@@ -76,7 +76,7 @@ If you use this script to characterize the ASCII embedded glTF 2.0 model [`Duck.
     <formatVersion>2.0</formatVersion>
     <size>162796</size>
     <SHA256Checksum>b69c34f30ec2803a37c6546c890a202f4db618745a3fefa3e5ac360bff211931</SHA256Checksum>
-    <creationDate>2024-11-22T10:59:22.206245</creationDate>
+    <creationDate>2024-11-22T12:43:51.786020</creationDate>
     <modificationDate>2023-05-31T10:26:56</modificationDate>
     <generator>COLLADA2GLTF</generator>
     <hasDefaultScene>true</hasDefaultScene>
@@ -88,7 +88,7 @@ If you use this script to characterize the ASCII embedded glTF 2.0 model [`Duck.
     <hasSkins>false</hasSkins>
     <rawGLTFValidatorOutput>
 <![CDATA[{
-    "uri": "var/archivematica/sharedDirectory/watchedDirectories/workFlowDecisions/extractPackagesChoice/g15_test-af8732a8-393f-484d-b894-48240b63d77c/objects/Duck.gltf",
+    "uri": "var/archivematica/sharedDirectory/watchedDirectories/workFlowDecisions/extractPackagesChoice/g16_test-dd341170-fea6-4371-9198-5a5dc79b2fe7/objects/Duck.gltf",
     "mimeType": "model/gltf+json",
     "validatorVersion": "2.0.0-dev.3.8",
     "issues": {
