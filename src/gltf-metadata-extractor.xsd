@@ -8,7 +8,7 @@
     <!-- Root Element: GLTFMetadataExtractor -->
     <xs:element name="GLTFMetadataExtractor">
         <xs:annotation>
-            <xs:documentation>Root element containing metadata about a GLTF file based on the official glTF-Validator by Khronos Group.</xs:documentation>
+            <xs:documentation>Root element containing metadata about a GLTF file based.</xs:documentation>
         </xs:annotation>
         <xs:complexType>
             <xs:sequence>
