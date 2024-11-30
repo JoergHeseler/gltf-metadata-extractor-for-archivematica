@@ -62,9 +62,15 @@ To install this script, follow these steps:
 
 To test this metadata exctractor, you can use the sample glTF files located [here](https://github.com/JoergHeseler/3d-sample-files-for-digital-preservation-testing/tree/main/gltf).
 
+### In Archivematica:
+
 You can view the error codes and detailed characterization results in the Archivmatica frontend after starting a transfer by expanding the `▸ Microservice: Characterize and extract metadata` section and clicking on the gear icon of `Microservice: Characterize and extract metadata`.
 
 Valid files should pass characterization with this script and return error code **0**. However, files containing errors should fail characterization and either return error code **1** or **255**.
+
+### In the command line prompt:
+
+You can use the validator at the command line prompt by typing `python gltf-metadata-extractor.py --file-full-name=<filename>`.
 
 ### Example
 
