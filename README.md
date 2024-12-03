@@ -79,7 +79,7 @@ If you use this script to characterize the ASCII embedded glTF 2.0 model [`Duck.
 ```xml
 <?xml version="1.0" ?>
 <GLTFMetadataExtractor xmlns="http://nfdi4culture.de/gltf-metadata-extractor1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://nfdi4culture.de/gltf-metadata-extractor1 https://raw.githubusercontent.com/JoergHeseler/gltf-metadata-extractor-for-archivematica/refs/heads/main/src/gltf-metadata-extractor.xsd">
-    <formatName>GLTF</formatName>
+    <formatName>glTF (Graphics Library Transmission Format)</formatName>
     <formatVersion>2.0</formatVersion>
     <size>162796</size>
     <SHA256Checksum>b69c34f30ec2803a37c6546c890a202f4db618745a3fefa3e5ac360bff211931</SHA256Checksum>
