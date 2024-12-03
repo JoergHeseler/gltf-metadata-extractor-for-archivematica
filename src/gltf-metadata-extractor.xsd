@@ -14,7 +14,7 @@
             <xs:sequence>
                 <xs:element name="formatName" type="xs:string">
                     <xs:annotation>
-                        <xs:documentation>The name of the file format, e.g., GLTF.</xs:documentation>
+                        <xs:documentation>The name of the file format, i.e. glTF (Graphics Library Transmission Format).</xs:documentation>
                     </xs:annotation>
                 </xs:element>
                 <xs:element name="formatVersion" type="xs:string">
