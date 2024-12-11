@@ -74,28 +74,27 @@ You can use the validator at the command line prompt by typing `python gltf-meta
 
 ### Example
 
-If you use this script to characterize the ASCII embedded glTF 2.0 model [`Duck.gltf`](https://github.com/KhronosGroup/glTF-Sample-Models/blob/main/2.0/Duck/glTF-Embedded/Duck.gltf), the error code **0** should be returned and the following XML content will be included in the AIP's METS document in the <objectCharacteristicsExtension> element of the file:
+If you use this script to characterize the ASCII embedded glTF 2.0 model [`mask-gltf-2.0_binary-valid.gltf`](https://github.com/JoergHeseler/3d-sample-files-for-digital-preservation-testing/blob/main/gltf/mask-gltf-2.0_separated-valid/mask-gltf-2.0_binary-valid.gltf), the error code **0** should be returned and the following XML content will be included in the AIP's METS document in the <objectCharacteristicsExtension> element of the file:
 
 ```xml
 <?xml version="1.0" ?>
 <GLTFMetadataExtractor xmlns="http://nfdi4culture.de/gltf-metadata-extractor1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://nfdi4culture.de/gltf-metadata-extractor1 https://raw.githubusercontent.com/JoergHeseler/gltf-metadata-extractor-for-archivematica/refs/heads/main/src/gltf-metadata-extractor.xsd">
     <formatName>glTF (Graphics Library Transmission Format)</formatName>
     <formatVersion>2.0</formatVersion>
-    <size>162796</size>
-    <SHA256Checksum>b69c34f30ec2803a37c6546c890a202f4db618745a3fefa3e5ac360bff211931</SHA256Checksum>
-    <creationDate>2024-11-22T12:43:51.786020</creationDate>
-    <modificationDate>2023-05-31T10:26:56</modificationDate>
-    <generator>COLLADA2GLTF</generator>
+    <size>1881</size>
+    <SHA256Checksum>c28647b4b91869314d662ecd6b059386061e15a452d334edf76da10f5b5819ad</SHA256Checksum>
+    <creationDate>2024-12-10T15:19:48.063606</creationDate>
+    <modificationDate>2024-12-10T21:53:07.817540</modificationDate>
+    <generator>Khronos glTF Blender I/O v4.3.47</generator>
     <hasDefaultScene>true</hasDefaultScene>
-    <totalVertexCount>2399</totalVertexCount>
-    <totalTriangleCount>4212</totalTriangleCount>
+    <totalVertexCount>62383</totalVertexCount>
+    <totalTriangleCount>100000</totalTriangleCount>
     <materialCount>1</materialCount>
     <hasTextures>true</hasTextures>
     <animationCount>0</animationCount>
     <hasSkins>false</hasSkins>
-    <rawGLTFValidatorOutput>
-<![CDATA[{
-    "uri": "var/archivematica/sharedDirectory/watchedDirectories/workFlowDecisions/extractPackagesChoice/g16_test-dd341170-fea6-4371-9198-5a5dc79b2fe7/objects/Duck.gltf",
+    <rawGLTFValidatorOutput><![CDATA[{
+    "uri": "var/archivematica/sharedDirectory/watchedDirectories/workFlowDecisions/extractPackagesChoice/g16_test-dd341170-fea6-4371-9198-5a5dc79b2fe7/objects/mask-gltf-2.0_binary-valid.gltf",
     "mimeType": "model/gltf+json",
     "validatorVersion": "2.0.0-dev.3.8",
     "issues": {
@@ -108,24 +107,24 @@ If you use this script to characterize the ASCII embedded glTF 2.0 model [`Duck.
     },
     "info": {
         "version": "2.0",
-        "generator": "COLLADA2GLTF",
+        "generator": "Khronos glTF Blender I/O v4.3.47",
         "resources": [
             {
                 "pointer": "/buffers/0",
                 "mimeType": "application/gltf-buffer",
-                "storage": "data-uri",
-                "byteLength": 102040
+                "storage": "external",
+                "uri": "mask-gltf-2.0_binary-valid.bin",
+                "byteLength": 2596256
             },
             {
                 "pointer": "/images/0",
-                "mimeType": "image/png",
-                "storage": "data-uri",
+                "mimeType": "image/jpeg",
+                "storage": "external",
+                "uri": "Image_0.jpg",
                 "image": {
-                    "width": 512,
-                    "height": 512,
+                    "width": 4096,
+                    "height": 4096,
                     "format": "rgb",
-                    "primaries": "srgb",
-                    "transfer": "srgb",
                     "bits": 8
                 }
             }
@@ -137,13 +136,13 @@ If you use this script to characterize the ASCII embedded glTF 2.0 model [`Duck.
         "hasTextures": true,
         "hasDefaultScene": true,
         "drawCallCount": 1,
-        "totalVertexCount": 2399,
-        "totalTriangleCount": 4212,
+        "totalVertexCount": 62383,
+        "totalTriangleCount": 100000,
         "maxUVs": 1,
         "maxInfluences": 0,
         "maxAttributes": 3
     }
-}]]>    </rawGLTFValidatorOutput>
+}]]></rawGLTFValidatorOutput>
 </GLTFMetadataExtractor>
 ```
 

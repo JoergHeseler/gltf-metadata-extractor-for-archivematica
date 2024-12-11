@@ -14,6 +14,12 @@ import sys
 import xml.etree.ElementTree as ET
 from xml.dom import minidom
 
+def get_validator_path_from_arguments():
+    for arg in sys.argv:
+        if arg.lower().startswith("--validator-path="):
+            return arg.split("=", 1)[1].rstrip('/\\')
+    return '/usr/share/gltf_validator'
+
 def get_target_file_name_from_arguments():
     target = None
     for arg in sys.argv:
@@ -38,7 +44,7 @@ class GLTFValidatorException(Exception):
 
 def parse_gltf_validator_data(target):
     # Run the official gltf_validator
-    validator_path = '/usr/share/gltf_validator'
+    validator_path = get_validator_path_from_arguments()
     args = [validator_path, '-amo', target]
 
     try:
