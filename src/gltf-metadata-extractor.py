@@ -43,6 +43,8 @@ def parse_gltf_validator_data(target):
 
     try:
         output = subprocess.check_output(args).decode("utf8")
+    except FileNotFoundError:
+        raise GLTFValidatorException("gltf_validator not found. Use --validator-path= to specify its path.")
     except subprocess.CalledProcessError:
         raise GLTFValidatorException("gltf_validator failed when running: " + ' '.join(args))
     json_output = json.loads(output.encode("utf8"))
