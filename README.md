@@ -74,7 +74,7 @@ You can use the validator at the command line prompt by typing `python gltf-meta
 
 ### Example
 
-If you use this script to characterize the ASCII embedded glTF 2.0 model [`mask-gltf-2.0_binary-valid.gltf`](https://github.com/JoergHeseler/3d-sample-files-for-digital-preservation-testing/blob/main/gltf/mask-gltf-2.0_separated-valid/mask-gltf-2.0_binary-valid.gltf), the error code **0** should be returned and the following XML content will be included in the AIP's METS document in the <objectCharacteristicsExtension> element of the file:
+If you use this script to characterize the ASCII embedded glTF 2.0 model [`mask-gltf-2.0_separated-valid.gltf`](https://github.com/JoergHeseler/3d-sample-files-for-digital-preservation-testing/blob/main/gltf/mask-gltf-2.0_separated-valid/mask-gltf-2.0_separated-valid.gltf), the error code **0** should be returned and the following XML content will be included in the AIP's METS document in the <objectCharacteristicsExtension> element of the file:
 
 ```xml
 <?xml version="1.0" ?>
@@ -82,7 +82,7 @@ If you use this script to characterize the ASCII embedded glTF 2.0 model [`mask-
     <formatName>glTF (Graphics Library Transmission Format)</formatName>
     <formatVersion>2.0</formatVersion>
     <size>1881</size>
-    <SHA256Checksum>c28647b4b91869314d662ecd6b059386061e15a452d334edf76da10f5b5819ad</SHA256Checksum>
+    <SHA256Checksum>67800111caab49ac8af8f98d7861bf922b777b98f959eb4e81081fd99149e024</SHA256Checksum>
     <creationDate>2024-12-10T15:19:48.063606</creationDate>
     <modificationDate>2024-12-10T21:53:07.817540</modificationDate>
     <generator>Khronos glTF Blender I/O v4.3.47</generator>
@@ -94,7 +94,7 @@ If you use this script to characterize the ASCII embedded glTF 2.0 model [`mask-
     <animationCount>0</animationCount>
     <hasSkins>false</hasSkins>
     <rawGLTFValidatorOutput><![CDATA[{
-    "uri": "var/archivematica/sharedDirectory/watchedDirectories/workFlowDecisions/extractPackagesChoice/g16_test-dd341170-fea6-4371-9198-5a5dc79b2fe7/objects/mask-gltf-2.0_binary-valid.gltf",
+    "uri": "var/archivematica/sharedDirectory/watchedDirectories/workFlowDecisions/extractPackagesChoice/g16_test-dd341170-fea6-4371-9198-5a5dc79b2fe7/objects/mask-gltf-2.0_separated-valid.gltf",
     "mimeType": "model/gltf+json",
     "validatorVersion": "2.0.0-dev.3.8",
     "issues": {
@@ -113,7 +113,7 @@ If you use this script to characterize the ASCII embedded glTF 2.0 model [`mask-
                 "pointer": "/buffers/0",
                 "mimeType": "application/gltf-buffer",
                 "storage": "external",
-                "uri": "mask-gltf-2.0_binary-valid.bin",
+                "uri": "mask-gltf-2.0_separated-valid.bin",
                 "byteLength": 2596256
             },
             {
