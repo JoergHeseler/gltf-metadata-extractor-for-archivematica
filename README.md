@@ -74,27 +74,27 @@ You can use the validator at the command line prompt by typing `python gltf-meta
 
 ### Example
 
-If you use this script to characterize the ASCII embedded glTF 2.0 model [`mask-gltf-2.0_separated-valid.gltf`](https://github.com/JoergHeseler/3d-sample-files-for-digital-preservation-testing/blob/main/gltf/mask-gltf-2.0_separated-valid/mask-gltf-2.0_separated-valid.gltf), the error code **0** should be returned and the following XML content will be included in the AIP's METS document in the <objectCharacteristicsExtension> element of the file:
+If you use this script to characterize the ASCII embedded glTF 2.0 model [`cockatoo-gltf-2.0_separated-valid.gltf`](https://github.com/JoergHeseler/3d-sample-files-for-digital-preservation-testing/blob/main/gltf/cockatoo-gltf-2.0_separated-valid/cockatoo-gltf-2.0_separated-valid.gltf), the error code **0** should be returned and the following XML content will be included in the AIP's METS document in the <objectCharacteristicsExtension> element of the file:
 
 ```xml
 <?xml version="1.0" ?>
 <GLTFMetadataExtractor xmlns="http://nfdi4culture.de/gltf-metadata-extractor1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://nfdi4culture.de/gltf-metadata-extractor1 https://raw.githubusercontent.com/JoergHeseler/gltf-metadata-extractor-for-archivematica/refs/heads/main/src/gltf-metadata-extractor.xsd">
     <formatName>glTF (Graphics Library Transmission Format)</formatName>
     <formatVersion>2.0</formatVersion>
-    <size>1881</size>
-    <SHA256Checksum>67800111caab49ac8af8f98d7861bf922b777b98f959eb4e81081fd99149e024</SHA256Checksum>
-    <creationDate>2024-12-10T15:19:48.063606</creationDate>
-    <modificationDate>2024-12-10T21:53:07.817540</modificationDate>
+    <size>11090</size>
+    <SHA256Checksum>a687aa792ee2fa6fd4c8a4c4ce116edc0d09a79e520de8caae662d44140ae5f8</SHA256Checksum>
+    <creationDate>2024-12-13T10:03:42.166498</creationDate>
+    <modificationDate>2024-12-13T13:28:35.842678</modificationDate>
     <generator>Khronos glTF Blender I/O v4.3.47</generator>
     <hasDefaultScene>true</hasDefaultScene>
-    <totalVertexCount>62383</totalVertexCount>
-    <totalTriangleCount>100000</totalTriangleCount>
+    <totalVertexCount>519913</totalVertexCount>
+    <totalTriangleCount>776822</totalTriangleCount>
     <materialCount>1</materialCount>
     <hasTextures>true</hasTextures>
     <animationCount>0</animationCount>
     <hasSkins>false</hasSkins>
     <rawGLTFValidatorOutput><![CDATA[{
-    "uri": "var/archivematica/sharedDirectory/watchedDirectories/workFlowDecisions/extractPackagesChoice/g16_test-dd341170-fea6-4371-9198-5a5dc79b2fe7/objects/mask-gltf-2.0_separated-valid.gltf",
+    "uri": "var/archivematica/sharedDirectory/watchedDirectories/workFlowDecisions/extractPackagesChoice/g16_test-dd341170-fea6-4371-9198-5a5dc79b2fe7/objects/cockatoo-gltf-2.0_separated-valid.gltf",
     "mimeType": "model/gltf+json",
     "validatorVersion": "2.0.0-dev.3.8",
     "issues": {
@@ -108,23 +108,54 @@ If you use this script to characterize the ASCII embedded glTF 2.0 model [`mask-
     "info": {
         "version": "2.0",
         "generator": "Khronos glTF Blender I/O v4.3.47",
+        "extensionsUsed": [
+            "KHR_materials_specular"
+        ],
         "resources": [
             {
                 "pointer": "/buffers/0",
                 "mimeType": "application/gltf-buffer",
                 "storage": "external",
-                "uri": "mask-gltf-2.0_separated-valid.bin",
-                "byteLength": 2596256
+                "uri": "cockatoo-gltf-2.0_separated-valid.bin",
+                "byteLength": 25589552
             },
             {
                 "pointer": "/images/0",
+                "mimeType": "image/png",
+                "storage": "external",
+                "uri": "Image_2.png",
+                "image": {
+                    "width": 1024,
+                    "height": 1024,
+                    "format": "rgb",
+                    "primaries": "srgb",
+                    "transfer": "srgb",
+                    "bits": 8
+                }
+            },
+            {
+                "pointer": "/images/1",
                 "mimeType": "image/jpeg",
                 "storage": "external",
                 "uri": "Image_0.jpg",
                 "image": {
-                    "width": 4096,
-                    "height": 4096,
+                    "width": 1024,
+                    "height": 1024,
                     "format": "rgb",
+                    "bits": 8
+                }
+            },
+            {
+                "pointer": "/images/2",
+                "mimeType": "image/png",
+                "storage": "external",
+                "uri": "Image_1.png",
+                "image": {
+                    "width": 1024,
+                    "height": 1024,
+                    "format": "rgb",
+                    "primaries": "srgb",
+                    "transfer": "srgb",
                     "bits": 8
                 }
             }
@@ -135,9 +166,9 @@ If you use this script to characterize the ASCII embedded glTF 2.0 model [`mask-
         "hasSkins": false,
         "hasTextures": true,
         "hasDefaultScene": true,
-        "drawCallCount": 1,
-        "totalVertexCount": 62383,
-        "totalTriangleCount": 100000,
+        "drawCallCount": 8,
+        "totalVertexCount": 519913,
+        "totalTriangleCount": 776822,
         "maxUVs": 1,
         "maxInfluences": 0,
         "maxAttributes": 3
