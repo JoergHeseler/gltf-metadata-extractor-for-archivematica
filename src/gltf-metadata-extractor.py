@@ -3,7 +3,7 @@
 # Publisher: NFDI4Culture
 # Publication date: December 5, 2024
 # Author: Joerg Heseler
-# License: CC BY 4.0
+# License: CC BY-SA 4.0
 
 import json
 import os
