@@ -21,13 +21,10 @@ def get_validator_path_from_arguments():
     return '/usr/share/gltf_validator'
 
 def get_target_file_name_from_arguments():
-    target = None
     for arg in sys.argv:
         if arg.startswith("--file-full-name="):
-            # Extract the part after the equals sign
-            target = arg.split("=", 1)[1]
-            break
-    return target
+            return arg.split("=", 1)[1]
+    return sys.argv[1]
 
 def calculate_checksum(file_path, algorithm='sha256'):
     hash_func = hashlib.new(algorithm)
