@@ -198,7 +198,7 @@ As part of the [NFDI4Culture](https://nfdi4culture.de/) initiative, efforts are 
 
 ## Acknowledgments
 
-Special thanks to the IT colleagues at the SLUB Dresden for their support and valuable feedback during development.
+Special thanks to the colleagues from the SLUB Dresden, specifically from the Infrastructure and Long-Term Availability division, for their support and valuable feedback during the development.
 
 ## Imprint
 
