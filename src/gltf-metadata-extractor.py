@@ -71,7 +71,6 @@ def extract_gltf_metadata(file_path):
     })
 
     # Create XML tree
-    #root = ET.Element('GLTFMetadataExtractor')
     ET.SubElement(root, 'formatName').text = 'glTF (Graphics Library Transmission Format)'
     ET.SubElement(root, 'formatVersion').text = gltf_json_output['info']['version']
     ET.SubElement(root, 'size').text = str(file_size)
