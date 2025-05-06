@@ -60,7 +60,7 @@ To install this script, follow these steps:
 
 ## Test
 
-To test this metadata exctractor, you can use the sample glTF files located [here](https://github.com/JoergHeseler/3d-sample-files-for-digital-preservation-testing/tree/main/gltf).
+To test this metadata exctractor, you can use the sample glTF files located [here](https://github.com/JoergHeseler/mesh-samples-for-preservation-testing/tree/main/gltf).
 
 ### In Archivematica:
 
