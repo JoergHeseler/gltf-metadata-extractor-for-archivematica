@@ -74,7 +74,7 @@ You can use the validator at the command line prompt by typing `python gltf-meta
 
 ### Example
 
-If you use this script to characterize the ASCII embedded glTF 2.0 model [`cockatoo-gltf-2.0_separated-valid.gltf`](https://github.com/JoergHese/ler/mesh-samples-for-preservation-testing/tree/main/gltf/cockatoo-gltf-2.0_separated-unmodified-valid), the error code **0** should be returned and the following XML content will be included in the AIP's METS document in the <objectCharacteristicsExtension> element of the file:
+If you use this script to characterize the ASCII embedded glTF 2.0 model [`cockatoo-gltf-2.0_separated-valid.gltf`](https://git.slub-dresden.de/nfdi4culturedigitalpreservation/mesh-samples-for-preservation-testing/tree/main/gltf/cockatoo-gltf-2.0_separated-unmodified-valid), the error code **0** should be returned and the following XML content will be included in the AIP's METS document in the <objectCharacteristicsExtension> element of the file:
 
 ```xml
 <?xml version="1.0" ?>
